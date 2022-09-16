@@ -3,6 +3,7 @@ class TASK {
  System.out.println();
     }
 }
+int a_n = 3+2 (n+1);  
 import n = 3 ;
 
 
