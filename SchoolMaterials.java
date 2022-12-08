@@ -1,14 +1,20 @@
 import java.util.Scanner;
 public class SchoolMaterials {
-    public static void main (String[]args){
+    public static void main ( String[]args){
         Scanner scanner = new Scanner(System.in);
-        int broistranici=Integer.parseInt(scanner.nextLine());
-        int stranici=Integer.parseInt(scanner.nextLine());
-        int BroiNaDnite=Integer.parseInt(scanner.nextLine());
-        int chasove = broistranici / stranici / BroiNaDnite ;
-        System.out.println(chasove);
 
-
+        // Брой пакети с химикалки
+        double BroiPaketiHimikali = Double.parseDouble(scanner.nextLine());
+        //Брой пакети с маркери
+        double BroiPaketiMarkeri = Double.parseDouble(scanner.nextLine());
+        //Литри препарат за  почистване на Дъската
+        double LitriPreparatZaDuska = Double.parseDouble(scanner.nextLine());
+        //Процент Намаление
+        double ProcentNamalenie = Double.parseDouble(scanner.nextLine());
+        double suma = BroiPaketiHimikali * BroiPaketiMarkeri * LitriPreparatZaDuska -(ProcentNamalenie / 100) / 25;
+        System.out.println(suma);
 
     }
+
+
 }
